@@ -1,13 +1,21 @@
 {
-  "name": "eduworks-section-8",
-  "version": "1.0.0",
-  "main": "index.js",
-  "repository": "git@github.com:Dio110/eduworks-section-8.git",
-  "author": "Andiono Afianto <andiono.afianto@btpn.com>",
-  "license": "MIT",
-  "devDependencies": {
-    "cypress": "^10.11.0",
-    "cypress-cucumber-preprocessor": "^4.3.1",
-    "prettier": "^2.7.1"
-  }
+    "name": "eduwork_rizki_pratama",
+    "version": "1.0.0",
+    "description": "automation ui using cypress",
+    "main": "index.js",
+    "author": "Rizki_Pratama",
+    "license": "MIT",
+    "scripts": {
+        "cy:open": "cypress open",
+        "cy:run": "cypress run"
+    },
+    "devDependencies": {
+        "cypress": "^12.5.1",
+        "cypress-cucumber-preprocessor": "^4.3.1",
+        "prettier": "^2.8.4"
+    },
+    "cypress-cucumber-preprocessor": {
+        "nonGlobalStepDefinition": true,
+        "stepDefinitions": "cypress/e2e/step_definitions"
+    }
 }
