@@ -3,6 +3,7 @@ describe('Get User List', () => {
     cy.request({
       method: 'GET',
       url: 'https://reqres.in/api/users?',
+      // https://reqres.in/api/users?page=2&per_page=4&delay=3
     }).as('users');
     cy.get('@users').its('status').should('equal', 200);
   });

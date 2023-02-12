@@ -1,4 +1,4 @@
-describe('Get User List', () => {
+describe('Post User List', () => {
   it('Successfully create new user', () => {
     var user = {
       name: 'Muhamad Rizki Pratama',
